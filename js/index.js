@@ -109,6 +109,7 @@ if(randomNumber)
 	else
 	$('#respuesta').html("<h2 style='background:#000'>"+pregunta+"</h2>"+'<img src="no.gif" />');	
 	
+	pregunta=$('#pregunta').val='';
 
 	
 }
