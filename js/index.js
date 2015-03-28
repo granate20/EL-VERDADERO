@@ -76,6 +76,8 @@ var app = {
 		
 		
         app.receivedEvent('deviceready');
+		miAdmob();
+		showAd(true);
 		document.addEventListener("backbutton", onBackKeyDown, false);
 		
 		
