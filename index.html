@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!--
+Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<html>
+
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+<title>El Verdadero</title>
+<style>
+#abre_panel {
+position: absolute;
+background-image: url(img/menu_btn.png);
+background-repeat: no-repeat;
+width: 50px;
+height: 20px;
+box-shadow: none;
+background-color: transparent !important;
+border: none;
+left: -5px;
+top: 0;
+margin-top: 6px !important;
+}
+.nav-glyphish-example .ui-btn {
+padding-top: 40px !important;
+}
+.nav-glyphish-example .ui-btn:after {
+width: 30px!important;
+height: 30px!important;
+margin-left: -15px !important;
+box-shadow: none!important;
+-moz-box-shadow: none!important;
+-webkit-box-shadow: none!important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+}
+#chat:after {
+background: url("../_assets/img/glyphish-icons/09-chat2.png") 50% 50% no-repeat;
+background-size: 24px 22px;
+}
+#email:after {
+background: url("../_assets/img/glyphish-icons/18-envelope.png") 50% 50% no-repeat;
+background-size: 24px 16px;
+}
+#login:after {
+background: url("../_assets/img/glyphish-icons/30-key.png") 50% 50% no-repeat;
+background-size: 12px 26px;
+}
+#beer:after {
+background: url("../_assets/img/glyphish-icons/88-beermug.png") 50% 50% no-repeat;
+background-size: 22px 27px;
+}
+#coffee:after {
+background: url("../_assets/img/glyphish-icons/100-coffee.png") 50% 50% no-repeat;
+background-size: 20px 24px;
+}
+#skull:after {
+background: url("../_assets/img/glyphish-icons/21-skull.png") 50% 50% no-repeat;
+background-size: 22px 24px;
+}
+</style>
+
+
+</head>
+
+<body style="background:#000">
+<div class="app">
+<h1>El Verdadero</h1>
+<div id="deviceready" class="blink">
+<p class="event listening">Connectando</p>
+<p class="event received">Conectado</p>
+</div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+app.initialize();
+</script>
+
+<div data-role="page" id="inicio" style="background:url(MagoMerlinHadalu09021.gif); background-position:center; background-repeat:no-repeat" >
+
+
+<div data-role="content" style="margin-top:5%" >
+<center>
+<label for="text-basic" style="background:#036; font-size:28px">Dime que quieres preguntar...</label>
+<input type="text" id="pregunta" name="text-basic" style="background:#09F" placeholder="ESCRIBE ACA..." id="text-basic" value="">
+<button class="ui-btn" style="background:#066" onClick="preguntar();">Preguntar</button>
+<div id="respuesta">
+
+</div>
+</center>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
