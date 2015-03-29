@@ -106,6 +106,29 @@ background-size: 22px 24px;
 app.initialize();
 </script>
 
+
+<script>
+var admobid = {};
+if( /(android)/i.test(navigator.userAgent) ) { 
+    admobid = { // for Android
+        banner: 'ca-app-pub-3675194092886747/4719787118',
+        interstitial: 'ca-app-pub-3675194092886747/4719787118'
+    };
+} 
+
+function initApp() {
+    if (AdMob) {
+        AdMob.createBanner({
+            adId : admobid.banner,
+            position : AdMob.AD_POSITION.BOTTOM_CENTER,
+            autoShow : true
+        });
+    }
+}
+
+document.addEventListener('deviceready', initApp, false);
+</script>
+
 <div data-role="page" id="inicio" style="background:url(MagoMerlinHadalu09021.gif); background-position:center; background-repeat:no-repeat" >
 
 

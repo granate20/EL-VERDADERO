@@ -45,7 +45,7 @@
     <!-- Core plugins -->
 
     <gap:plugin name="org.apache.cordova.network-information" />
-	<gap:plugin name="com.admob.google" source="plugins.cordova.io" />
+	<gap:plugin name="com.google.cordova.admob" source="plugins.cordova.io" />
 
 
     <!-- Third party plugins -->
